@@ -1,9 +1,9 @@
 $(function() {
 
   var $m_btn = $("#m_btn"),
-    $m_menu = $("#m_menu"),
-    $menu = $("#menu"),
-    $window = $(window);
+      $m_menu = $("#m_menu"),
+      $menu = $("#menu"),
+      $window = $(window);
 
   if (navigator.userAgent.indexOf("Firefox") != -1) {
     $('header').animate({

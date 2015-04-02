@@ -1,0 +1,13 @@
+{
+  "name": "scrolly",
+  "homepage": "https://github.com/Victa/scrolly",
+  "_release": "9482fbdd85",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "9482fbdd85132ba9eb86418ea77ade74cb3ddc24"
+  },
+  "_source": "https://github.com/Victa/scrolly.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/Victa/scrolly.git"
+}
