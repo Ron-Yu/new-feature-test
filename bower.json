@@ -20,7 +20,10 @@
     "semantic-ui": "~1.11.5",
     "jquery-throttle-debounce": "https://github.com/cowboy/jquery-throttle-debounce.git",
     "jquery-ui": "~1.11.4",
-    "skel": "~2.2.1"
+    "skel": "~2.2.1",
+    "owl.carousel": "*",
+    "jquery.scrollex": "~0.2.0",
+    "scrolly": "https://github.com/Victa/scrolly.git"
   },
   "overrides": {
     "jquery-throttle-debounce": {
@@ -34,6 +37,16 @@
         "dist/skel.min.js",
         "dist/skel.css"
       ]
+    },
+    "owl.carousel": {
+      "main": [
+        "dist/owl.carousel.min.js",
+        "dist/assets/owl.carousel.min.css",
+        "dist/assets/owl.theme.default.css"
+      ]
+    },
+    "scrolly": {
+      "main" : "jquery.scrolly.js"
     }
   }
 }
