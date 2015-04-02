@@ -1,0 +1,39 @@
+{
+  "name": "newPortfolio",
+  "version": "0.0.0",
+  "authors": [
+    "Ron Yu <ronyu77@gmail.com>"
+  ],
+  "description": "test",
+  "keywords": [
+    "test"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic-ui": "~1.11.5",
+    "jquery-throttle-debounce": "https://github.com/cowboy/jquery-throttle-debounce.git",
+    "jquery-ui": "~1.11.4",
+    "skel": "~2.2.1"
+  },
+  "overrides": {
+    "jquery-throttle-debounce": {
+      "main": "jquery.ba-throttle-debounce.min.js"
+    },
+    "jquery-ui": {
+      "main": "jquery-ui.min.js"
+    },
+    "skel": {
+      "main": [
+        "dist/skel.min.js",
+        "dist/skel.css"
+      ]
+    }
+  }
+}

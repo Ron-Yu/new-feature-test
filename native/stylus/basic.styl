@@ -1,0 +1,69 @@
+/****
+General setting
+****/
+body
+	#page
+		max-width 1680px
+		margin 0 auto
+
+	.row
+		.x
+			border 1px solid black
+			padding 1.5em 0
+		
+	.row > *
+		text-align center
+		transition all 1s ease 0.5s
+
+/****
+Navigation menu
+****/
+
+#menu
+	max-width 1024px
+	margin 0 auto
+	position absolute
+	top 0px
+	left 50%
+	transform translateX(-50%)
+	transition all 1s
+	opacity 0
+	z-index 1
+	
+#m_btn 
+	display none
+	
+#m_menu
+	background-color #F7F7F7
+
+@media all and (min-width:769px) 
+	#m_menu.active 
+		display none
+@media all and (max-width:768px)
+	#menu
+		display none
+	#m_btn
+		display inline-block
+		position fixed
+		top 1rem
+		left 1rem
+
+
+/****
+Header
+****/
+header
+	// background-image: url("../img/beach.jpg")
+	// transition all 5000 ease
+	// width 100%
+	// height 600px
+	// background-size cover
+	// background-position 50% 0
+	// background-repeat no-repeat
+	// position relative
+	// &:before
+	// 	content ""
+	// 	display block
+	// 	width 100%
+	// 	height 600px
+	// 	background-color rgba(0,0,0,0.1)

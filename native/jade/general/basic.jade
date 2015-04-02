@@ -1,0 +1,55 @@
+//- include variables in config.jade and make it as a block to be overrided in index.jade
+block config
+  include config
+
+doctype
+html
+  head
+    title
+      | #{pageTitle}
+    meta(charset='utf-8') 
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    //- meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content= metaDesc)
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+
+    //- decide whether semantic-ui.css is usable
+    if semantic
+      link(rel="stylesheet", href="assets/lib/css/semantic.css")
+
+    //- decide whether skel.js usable
+    if skel
+      script(type="application/javascript", src="assets/lib/js/skel.min.js")
+    
+    //- decide whether skel.js usable
+    if skel
+      script(type="application/javascript", src="js/init.js")
+
+    link(rel="stylesheet", type="text/css", href="css/basic.css")
+    
+    
+  body
+    //- include ../include/sidebar
+    #page.pusher
+      include ../include/header
+      block content
+      include ../include/footer
+    //- decide whether jQuery is usable
+    if jQuery
+      script(type="application/javascript", src="assets/lib/js/jquery.js")
+
+    //- decide whether jquery_ui.js usable
+    if jquery_ui
+      script(type="application/javascript", src="assets/lib/js/jquery-ui.min.js")
+
+    //- decide whether semantic-ui.js usable
+    if semantic
+      script(type="application/javascript", src="assets/lib/js/semantic.js")
+
+    //- decide whether throttle.js usable
+    if throttle
+      script(type="application/javascript", src="assets/lib/js/jquery.ba-throttle-debounce.min.js")
+
+    
+    script(type="application/javascript", src="js/basic.js")
+    
