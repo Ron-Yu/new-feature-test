@@ -7,9 +7,8 @@ var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     notify = require("gulp-notify"),
     clean = require('gulp-clean'),
+    concat = require('gulp-concat'),
     mainBowerFiles = require('main-bower-files');
-
-   
 
 var js_dest_path = 'build/assets/lib/js';
 var css_dest_path = 'build/assets/lib/css';
@@ -68,6 +67,15 @@ gulp.task('styles', function () {
     .pipe(gulp.dest('build/css'))
     .pipe(notify("Styles complie complete!"));
 });
+
+//responsive *.css concat task
+//concat
+// gulp.task('responsiveCssConcat', function () {
+//   gulp.src('build/css/responsive/*.css')
+//     .pipe(concat('responsive.css'))
+//     .pipe(gulp.dest('build/css'))
+//     .pipe(notify("responsive css concat complete!"));
+// });
 
 //Template task
 //compile jade

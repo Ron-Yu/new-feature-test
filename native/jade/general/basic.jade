@@ -9,7 +9,7 @@ html
       | #{pageTitle}
     meta(charset='utf-8') 
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-    //- meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     meta(name='description', content= metaDesc)
     link(rel='apple-touch-icon', href='apple-touch-icon.png')
 
@@ -20,9 +20,6 @@ html
     //- decide whether skel.js usable
     if skel
       script(type="application/javascript", src="assets/lib/js/skel.min.js")
-    
-    //- decide whether skel.js usable
-    if skel
       script(type="application/javascript", src="js/init.js")
 
     link(rel="stylesheet", type="text/css", href="css/basic.css")
@@ -34,6 +31,7 @@ html
       include ../include/header
       block content
       include ../include/footer
+
     //- decide whether jQuery is usable
     if jQuery
       script(type="application/javascript", src="assets/lib/js/jquery.js")
@@ -49,6 +47,14 @@ html
     //- decide whether throttle.js usable
     if throttle
       script(type="application/javascript", src="assets/lib/js/jquery.ba-throttle-debounce.min.js")
+
+    //- decide whether scrollex.js usable
+    if scrollex
+      script(type="application/javascript", src="assets/lib/js/jquery.scrollex.js")
+
+    //- decide whether scrolly.js usable
+    if scrolly
+      script(type="application/javascript", src="assets/lib/js/jquery.scrolly.js")
 
     
     script(type="application/javascript", src="js/basic.js")
